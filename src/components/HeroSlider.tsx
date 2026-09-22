@@ -104,6 +104,14 @@ export const HeroSlider: React.FC = () => {
           <p className="font-body-md md:font-body-lg text-body-md md:text-body-lg text-surface-container-high max-w-2xl mx-auto leading-relaxed mb-space-xl px-4 md:px-0">
             From economical city drives to luxury 4x4 adventures across Pakistan. Verified models, transparent tariffs, and 24/7 priority roadside dispatch.
           </p>
+          <button 
+            className="px-space-2xl py-4 rounded-full bg-primary hover:bg-primary/90 text-on-primary font-label-lg text-label-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            onClick={() => {
+              document.getElementById('fleet-section')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            Browse Fleet
+          </button>
         </div>
       </section>
     </div>

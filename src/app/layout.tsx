@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { BackToTop } from "@/components/BackToTop";
 import "./globals.css";
 
 const inter = Inter({
@@ -65,6 +66,9 @@ export default function RootLayout({
             <span className="material-symbols-outlined text-[30px]">chat</span>
           </WhatsAppButton>
         </div>
+        
+        {/* Floating Back to Top Button */}
+        <BackToTop />
       </body>
     </html>
   );
