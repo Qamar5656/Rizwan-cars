@@ -42,68 +42,70 @@ export const HeroSlider: React.FC = () => {
   const prevSlide = () => setCurrentSlide(prev => prev <= 1 ? totalSlides : prev - 1);
 
   return (
-    <section className="relative w-full -mt-20 overflow-hidden bg-primary-container min-h-[920px] flex flex-col justify-between" id="hero-slider">
-      {slides.map((slide) => (
-        <div 
-          key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 transform ease-out ${
-            currentSlide === slide.id 
-              ? 'opacity-100 scale-105' 
-              : 'opacity-0 scale-100 pointer-events-none'
-          }`}
+    <div className="w-full pt-14 md:pt-6 pb-4 px-4 md:px-8 flex justify-center">
+      <section className="relative w-full max-w-[1280px] overflow-hidden rounded-[2rem] bg-primary-container min-h-[75svh] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex flex-col justify-center shadow-2xl" id="hero-slider">
+        {slides.map((slide) => (
+          <div 
+            key={slide.id}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 transform ease-out ${
+              currentSlide === slide.id 
+                ? 'opacity-100 scale-105' 
+                : 'opacity-0 scale-100 pointer-events-none'
+            }`}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.alt}
+              fill
+              className="object-cover object-center w-full h-full"
+              priority={slide.id === 1}
+              unoptimized
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/60 to-primary-container/75 w-full h-full"></div>
+          </div>
+        ))}
+
+        {/* Side Navigation Arrows */}
+        <button 
+          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-surface-container-lowest/20 hover:bg-surface-container-lowest/40 backdrop-blur-md flex items-center justify-center transition-all text-on-secondary" 
+          onClick={prevSlide}
+          aria-label="Previous slide"
         >
-          <Image
-            src={slide.image}
-            alt={slide.alt}
-            fill
-            className="object-cover object-center"
-            priority={slide.id === 1}
-            unoptimized
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/60 to-primary-container/75"></div>
+          <span className="material-symbols-outlined text-[20px] md:text-[24px]">west</span>
+        </button>
+        <button 
+          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-surface-container-lowest/20 hover:bg-surface-container-lowest/40 backdrop-blur-md flex items-center justify-center transition-all text-on-secondary" 
+          onClick={nextSlide}
+          aria-label="Next slide"
+        >
+          <span className="material-symbols-outlined text-[20px] md:text-[24px]">east</span>
+        </button>
+
+        <div className="relative z-10 w-full px-6 sm:px-10 lg:px-16 py-16 md:py-24 flex flex-col items-center text-center">
+          <div className="flex flex-wrap items-center justify-center gap-space-xs mb-space-md">
+            <span className="inline-flex items-center gap-space-2xs px-space-sm py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">
+              <span className="material-symbols-outlined text-[16px] text-on-tertiary-container" style={{ fontVariationSettings: '"FILL" 1' }}>verified</span>
+              100% Insured Fleet
+            </span>
+            <span className="inline-flex items-center gap-space-2xs px-space-sm py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">
+              <span className="material-symbols-outlined text-[16px] text-secondary-container" style={{ fontVariationSettings: '"FILL" 1' }}>price_check</span>
+              Zero Hidden Charges
+            </span>
+            <span className="inline-flex items-center gap-space-2xs px-space-sm py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">
+              <span className="material-symbols-outlined text-[16px] text-[#25D366]" style={{ fontVariationSettings: '"FILL" 1' }}>bolt</span>
+              Instant WhatsApp Confirmation
+            </span>
+          </div>
+
+          <h1 className="font-display-lg md:font-display-xl text-display-lg md:text-display-xl text-on-secondary max-w-4xl tracking-tight leading-tight mb-space-sm drop-shadow-sm">
+            Premium & Reliable Car Rentals <span className="text-secondary-fixed">for Every Journey</span>
+          </h1>
+          
+          <p className="font-body-md md:font-body-lg text-body-md md:text-body-lg text-surface-container-high max-w-2xl mx-auto leading-relaxed mb-space-xl px-4 md:px-0">
+            From economical city drives to luxury 4x4 adventures across Pakistan. Verified models, transparent tariffs, and 24/7 priority roadside dispatch.
+          </p>
         </div>
-      ))}
-
-      {/* Side Navigation Arrows */}
-      <button 
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-surface-container-lowest/20 hover:bg-surface-container-lowest/40 backdrop-blur-md flex items-center justify-center transition-all text-on-secondary" 
-        onClick={prevSlide}
-        aria-label="Previous slide"
-      >
-        <span className="material-symbols-outlined text-[24px]">west</span>
-      </button>
-      <button 
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-surface-container-lowest/20 hover:bg-surface-container-lowest/40 backdrop-blur-md flex items-center justify-center transition-all text-on-secondary" 
-        onClick={nextSlide}
-        aria-label="Next slide"
-      >
-        <span className="material-symbols-outlined text-[24px]">east</span>
-      </button>
-
-      <div className="relative z-10 w-full max-w-[1280px] mx-auto px-gutter-desktop pt-36 pb-36 flex flex-col items-center text-center mt-20">
-        <div className="flex flex-wrap items-center justify-center gap-space-xs mb-space-md">
-          <span className="inline-flex items-center gap-space-2xs px-space-sm py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">
-            <span className="material-symbols-outlined text-[16px] text-on-tertiary-container" style={{ fontVariationSettings: '"FILL" 1' }}>verified</span>
-            100% Insured Fleet
-          </span>
-          <span className="inline-flex items-center gap-space-2xs px-space-sm py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">
-            <span className="material-symbols-outlined text-[16px] text-secondary-container" style={{ fontVariationSettings: '"FILL" 1' }}>price_check</span>
-            Zero Hidden Charges
-          </span>
-          <span className="inline-flex items-center gap-space-2xs px-space-sm py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">
-            <span className="material-symbols-outlined text-[16px] text-[#25D366]" style={{ fontVariationSettings: '"FILL" 1' }}>bolt</span>
-            Instant WhatsApp Confirmation
-          </span>
-        </div>
-
-        <h1 className="font-display-lg md:font-display-xl text-display-lg md:text-display-xl text-on-secondary max-w-4xl tracking-tight leading-tight mb-space-sm drop-shadow-sm">
-          Premium & Reliable Car Rentals <span className="text-secondary-fixed">for Every Journey</span>
-        </h1>
-        
-        <p className="font-body-md md:font-body-lg text-body-md md:text-body-lg text-surface-container-high max-w-2xl mx-auto leading-relaxed mb-space-xl px-4 md:px-0">
-          From economical city drives to luxury 4x4 adventures across Pakistan. Verified models, transparent tariffs, and 24/7 priority roadside dispatch.
-        </p>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };

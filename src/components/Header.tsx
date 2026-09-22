@@ -23,11 +23,11 @@ export const Header: React.FC = () => {
       <div className="h-20 max-w-[1280px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md">
         <Link href="/" className="flex items-center gap-space-sm">
           <Image 
-            alt="Apex Drive Brand Logo" 
-            className="h-10 w-auto object-contain" 
-            src="https://lh3.googleusercontent.com/aida/AEtjO1W2Od0efbFoTtyqO5i1MGYZG0nIbZJ4DrL_UhDXTETZ05wnsaa0fS3lqFf2CD88UqqtkGXNrgPwE93AgqpYJmZe-J8cShy9xzsLfTThqUPNyiuIK5H4nwSpv1sY-3jy3NwYIi211MyILpgIlnGDdrNGROh3I4sLN2NgzBCbDAB6hGsigrVqrdtcRIZlUg6-bOQARBBmEhUJdM7XmHytt-xQzXeEJ0hnYrw4lPEzA5OP_dmXDQdUZ4I_Vls" 
-            width={120} 
-            height={40} 
+            alt="Rizwan Cars Brand Logo" 
+            className="h-8 sm:h-10 md:h-12 w-auto object-contain brightness-0 transition-all duration-300" 
+            src="/images/Logo.png" 
+            width={160} 
+            height={48} 
             unoptimized
           />
         </Link>
@@ -58,15 +58,15 @@ export const Header: React.FC = () => {
           </div>
           <WhatsAppButton 
             phoneNumber="923174248579" 
-            message="Hello Apex Drive, I have an inquiry regarding car rental"
+            message="Hello Rizwan Cars, I have an inquiry regarding car rental"
             className="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-[#25D366] text-on-secondary font-label-lg text-label-lg transition-all hover:bg-[#22C35E] shadow-[0_4px_14px_rgba(37,211,102,0.3)]"
           >
             <span className="material-symbols-outlined text-[18px]">chat</span>
             <span>Chat & Book</span>
           </WhatsAppButton>
-          <div className="hidden md:flex w-8 h-8 rounded-full bg-primary items-center justify-center">
+          {/* <div className="hidden md:flex w-8 h-8 rounded-full bg-primary items-center justify-center">
             <span className="material-symbols-outlined text-on-primary text-[18px]">person</span>
-          </div>
+          </div> */}
           <button 
             className="lg:hidden w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-surface-container-high text-on-surface"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

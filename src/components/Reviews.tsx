@@ -53,7 +53,7 @@ export const Reviews: React.FC = () => {
                 ))}
               </div>
               <p className="font-body-md text-body-md text-on-surface leading-relaxed mb-space-lg italic">
-                &quot;Apex Drive made our corporate client visit seamless in Lahore. The Civic RS was delivered straight to Allama Iqbal International Airport right on the minute. Clean interior, flawless air-conditioning, zero deposit delays.&quot;
+                &quot;Rizwan Cars made our corporate client visit seamless in Lahore. The Civic RS was delivered straight to Allama Iqbal International Airport right on the minute. Clean interior, flawless air-conditioning, zero deposit delays.&quot;
               </p>
             </div>
             <div className="pt-space-md bg-surface-container-lowest">

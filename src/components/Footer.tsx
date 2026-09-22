@@ -9,14 +9,14 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col gap-space-md">
             <div className="flex items-center gap-space-sm">
               <Image 
-                alt="Apex Drive Brand Logo" 
-                className="h-8 w-auto object-contain brightness-0 invert" 
-                src="https://lh3.googleusercontent.com/aida/AEtjO1W2Od0efbFoTtyqO5i1MGYZG0nIbZJ4DrL_UhDXTETZ05wnsaa0fS3lqFf2CD88UqqtkGXNrgPwE93AgqpYJmZe-J8cShy9xzsLfTThqUPNyiuIK5H4nwSpv1sY-3jy3NwYIi211MyILpgIlnGDdrNGROh3I4sLN2NgzBCbDAB6hGsigrVqrdtcRIZlUg6-bOQARBBmEhUJdM7XmHytt-xQzXeEJ0hnYrw4lPEzA5OP_dmXDQdUZ4I_Vls" 
-                width={32} 
-                height={32} 
+                alt="Rizwan Cars Brand Logo" 
+                className="h-6 sm:h-8 md:h-10 w-auto object-contain brightness-0 invert transition-all duration-300" 
+                src="/images/Logo.png" 
+                width={160} 
+                height={48} 
                 unoptimized
               />
-              <span className="font-headline-sm text-headline-sm tracking-tight text-on-secondary uppercase">Apex Drive</span>
+              {/* <span className="font-headline-sm text-headline-sm tracking-tight text-on-secondary uppercase">Rizwan Cars</span> */}
             </div>
             <p className="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
               Executive car rentals and high-performance mobility tailored for business elites, vacationers, and discerning travelers. Engineered reliability with verified doorstep dispatch.
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
             <ul className="flex flex-col gap-space-sm">
               <li className="font-body-md text-body-md"><a className="text-on-primary-container hover:text-on-secondary transition-colors" href="#">Home</a></li>
               <li className="font-body-md text-body-md"><a className="text-on-primary-container hover:text-on-secondary transition-colors" href="#fleet-section">Vehicles Fleet</a></li>
-              <li className="font-body-md text-body-md"><a className="text-on-primary-container hover:text-on-secondary transition-colors" href="#">Chauffeur & Services</a></li>
+              <li className="font-body-md text-body-md"><a className="text-on-primary-container hover:text-on-secondary transition-colors" href="#">Driver & Services</a></li>
               <li className="font-body-md text-body-md"><a className="text-on-primary-container hover:text-on-secondary transition-colors" href="#">About Us</a></li>
               <li className="font-body-md text-body-md"><a className="text-on-primary-container hover:text-on-secondary transition-colors" href="#">Contact & Hubs</a></li>
             </ul>
@@ -59,15 +59,15 @@ export const Footer: React.FC = () => {
             <div className="flex flex-col gap-space-sm">
               <a className="flex items-center gap-space-xs text-on-primary-container hover:text-on-secondary transition-colors" href="tel:+18005552739">
                 <span className="material-symbols-outlined text-[18px]">call</span>
-                <span className="font-body-md text-body-md">+1 (800) 555-APEX</span>
+                <span className="font-body-md text-body-md">+1 (800) 555-CARS</span>
               </a>
               <a className="flex items-center gap-space-xs text-on-primary-container hover:text-on-secondary transition-colors" href="https://wa.me/923174248579" target="_blank" rel="noopener noreferrer">
                 <span className="material-symbols-outlined text-[18px] text-[#25D366]">forum</span>
                 <span className="font-body-md text-body-md">+92 317 4248579</span>
               </a>
-              <a className="flex items-center gap-space-xs text-on-primary-container hover:text-on-secondary transition-colors" href="mailto:concierge@apexdrive.com">
+              <a className="flex items-center gap-space-xs text-on-primary-container hover:text-on-secondary transition-colors" href="mailto:info@rizwancars.com">
                 <span className="material-symbols-outlined text-[18px]">mail</span>
-                <span className="font-body-md text-body-md">concierge@apexdrive.com</span>
+                <span className="font-body-md text-body-md">qamarabbaskhan107@gmail.com</span>
               </a>
               <div className="flex items-center gap-space-xs text-on-primary-container">
                 <span className="material-symbols-outlined text-[18px]">schedule</span>
@@ -78,10 +78,15 @@ export const Footer: React.FC = () => {
         </div>
         
         <div className="mt-space-3xl pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md">
-          <p className="font-body-sm text-body-sm text-on-primary-container">
-            © {new Date().getFullYear()} Apex Drive (Pvt) Ltd. All rights reserved.
-          </p>
-          <div className="flex items-center gap-space-lg">
+          <div className="flex flex-col items-center md:items-start gap-1">
+            <p className="font-body-sm text-body-sm text-on-primary-container">
+              © {new Date().getFullYear()} Rizwan Cars (Pvt) Ltd. All rights reserved.
+            </p>
+            <p className="font-body-sm text-body-sm text-on-primary-container">
+              Developed by <a href="mailto:qamarabbaskhan107@gmail.com" className="hover:text-on-secondary transition-colors underline">Qamar Abbas</a>
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center md:justify-end items-center gap-space-lg">
             <a className="font-body-sm text-body-sm text-on-primary-container hover:text-on-secondary transition-colors" href="#">Terms of Service</a>
             <a className="font-body-sm text-body-sm text-on-primary-container hover:text-on-secondary transition-colors" href="#">Privacy Policy</a>
             <a className="font-body-sm text-body-sm text-on-primary-container hover:text-on-secondary transition-colors" href="#">Rental Policies</a>
