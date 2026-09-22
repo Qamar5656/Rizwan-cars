@@ -1,8 +1,8 @@
 import { CallToAction } from "@/components/CallToAction";
 
 export const metadata = {
-  title: 'Contact Us | Apex Drive',
-  description: 'Get in touch with Apex Drive for bookings, inquiries, and corporate leasing.',
+  title: 'Contact Us | Rizwan Cars',
+  description: 'Get in touch with Rizwan Cars for bookings, inquiries, and corporate leasing.',
 };
 
 export default function ContactPage() {
@@ -36,7 +36,7 @@ export default function ContactPage() {
             <h3 className="font-headline-sm text-on-surface">24/7 Helpline</h3>
             <p className="text-on-surface-variant font-body-sm">For corporate inquiries and emergency roadside assistance.</p>
             <a href="tel:+18005552739" className="font-label-lg text-secondary hover:underline">
-              +1 (800) 555-APEX
+              +1 (800) 555-CARS
             </a>
           </div>
           
@@ -45,7 +45,7 @@ export default function ContactPage() {
             <h3 className="font-headline-sm text-on-surface">Nationwide Hubs</h3>
             <p className="text-on-surface-variant font-body-sm">We operate major dispatch hubs at Islamabad, Lahore, and Karachi airports.</p>
             <span className="font-label-lg text-on-surface">
-              Main HQ: Blue Area, Islamabad
+              Main HQ: Lahore
             </span>
           </div>
           

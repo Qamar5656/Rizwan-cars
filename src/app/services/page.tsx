@@ -1,8 +1,8 @@
 import { CallToAction } from "@/components/CallToAction";
 
 export const metadata = {
-  title: 'Chauffeur & Services | Apex Drive',
-  description: 'Premium chauffeur services, corporate fleet leasing, and VIP protocol escorts.',
+  title: 'Driver & Services | Rizwan Cars',
+  description: 'Premium driver services, corporate fleet leasing, and VIP protocol escorts.',
 };
 
 export default function ServicesPage() {
@@ -26,9 +26,9 @@ export default function ServicesPage() {
             <div className="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center mb-space-md">
               <span className="material-symbols-outlined text-[28px] text-on-primary-container">person_celebrate</span>
             </div>
-            <h3 className="font-headline-sm text-on-surface mb-space-xs">With Driver (Chauffeur)</h3>
-            <p className="font-body-md text-on-surface-variant">
-              Sit back and relax while our highly trained, uniformed chauffeurs navigate the traffic. Ideal for corporate roadshows, VIP protocol, and airport transfers.
+            <h3 className="font-headline-sm text-on-surface mb-space-xs">With Driver</h3>
+            <p className="font-body-md text-surface-container-high leading-relaxed">
+              Sit back and relax while our highly trained, uniformed drivers navigate the traffic. Ideal for corporate roadshows, VIP protocol, and airport transfers.
             </p>
           </div>
 

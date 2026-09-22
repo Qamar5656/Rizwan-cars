@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: PageProps) {
   if (!vehicle) return { title: 'Not Found' };
   
   return {
-    title: `${vehicle.model} Rental | Apex Drive`,
+    title: `${vehicle.model} Rental | Rizwan Cars`,
     description: `Rent the ${vehicle.model} starting at Rs. ${vehicle.pricePerDay.toLocaleString()}/day. ${vehicle.description}`,
   };
 }
@@ -28,7 +28,7 @@ export default function VehicleDetailsPage({ params }: PageProps) {
     notFound();
   }
 
-  const whatsappMessage = `Hello Apex Drive, I want to reserve the ${vehicle.model}`;
+  const whatsappMessage = `Hello Rizwan Cars, I want to reserve the ${vehicle.model}`;
 
   return (
     <>
