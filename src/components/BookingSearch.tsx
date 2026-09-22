@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 
 export const BookingSearch: React.FC = () => {
-  const [driveType, setDriveType] = useState<'self' | 'chauffeur'>('self');
+  const [driveType, setDriveType] = useState<'self' | 'driver'>('self');
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -14,7 +14,7 @@ export const BookingSearch: React.FC = () => {
   };
 
   return (
-    <div className="relative z-20 w-full max-w-[1200px] mx-auto px-gutter-desktop -mb-16">
+    <div className="relative z-20 w-full max-w-[1280px] mx-auto px-gutter-desktop -mb-16">
       <div className="w-full bg-surface-container-lowest rounded-2xl shadow-2xl p-space-lg border-2 border-surface-container">
         <div className="flex items-center justify-between flex-wrap gap-space-sm mb-space-md">
           <div className="inline-flex p-1 bg-surface-container rounded-full" id="drive-type-selector">
@@ -31,14 +31,14 @@ export const BookingSearch: React.FC = () => {
             </button>
             <button 
               className={`px-space-md py-space-xs rounded-full font-label-lg text-label-lg transition-all ${
-                driveType === 'chauffeur' 
+                driveType === 'driver' 
                   ? 'bg-primary text-on-primary shadow-sm' 
                   : 'text-on-surface-variant hover:text-on-surface'
               }`}
-              onClick={() => setDriveType('chauffeur')}
+              onClick={() => setDriveType('driver')}
               type="button"
             >
-              With Chauffeur
+              With Driver
             </button>
           </div>
           <div className="flex items-center gap-space-2xs text-on-surface font-label-md text-label-md">

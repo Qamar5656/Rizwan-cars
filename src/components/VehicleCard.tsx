@@ -9,7 +9,7 @@ interface VehicleCardProps {
 }
 
 export const VehicleCard: React.FC<VehicleCardProps> = memo(({ vehicle }) => {
-  const whatsappMessage = `Hello Apex Drive, I would like to reserve the ${vehicle.model}`;
+  const whatsappMessage = `Hello Rizwan Cars, I would like to reserve the ${vehicle.model}`;
 
   return (
     <div className="vehicle-card flex flex-col justify-between rounded-2xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(15,23,42,0.06)] hover:shadow-[0_12px_32px_rgba(15,23,42,0.12)] hover:-translate-y-1 transition-all overflow-hidden">
@@ -78,7 +78,7 @@ export const VehicleCard: React.FC<VehicleCardProps> = memo(({ vehicle }) => {
           className="w-full py-3 rounded-full bg-[#25D366] hover:bg-[#22C35E] text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-all shadow-[0_4px_14px_rgba(37,211,102,0.25)]"
         >
           <span className="material-symbols-outlined text-[18px]">chat</span>
-          <span>Book on WhatsApp</span>
+          <span>Book Now</span>
         </WhatsAppButton>
       </div>
     </div>

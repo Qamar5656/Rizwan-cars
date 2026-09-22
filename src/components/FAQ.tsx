@@ -21,7 +21,7 @@ const faqData = [
   },
   {
     question: "Can I drive inter-city across provinces?",
-    answer: "Yes! All Apex Drive vehicles are licensed for nationwide inter-provincial travel across Punjab, Sindh, KPK, Islamabad Capital Territory, and Gilgit-Baltistan. All units feature 24/7 telematics security and round-the-clock roadside emergency coordination on all major motorways (M-1, M-2, M-3, M-5, M-9, and KKH)."
+    answer: "Yes! All Rizwan Cars vehicles are licensed for nationwide inter-provincial travel across Punjab, Sindh, KPK, Islamabad Capital Territory, and Gilgit-Baltistan. All units feature 24/7 telematics security and round-the-clock roadside emergency coordination on all major motorways (M-1, M-2, M-3, M-5, M-9, and KKH)."
   }
 ];
 

@@ -20,7 +20,7 @@ export const CallToAction: React.FC = () => {
             VIP Protocol & Corporate Fleets
           </span>
           <h2 className="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-secondary tracking-tight leading-tight mb-space-md">
-            Need a Custom Quote or Chauffeur Drive?
+            Need a Custom Quote or Driver Service?
           </h2>
           <p className="font-body-lg text-body-lg text-surface-container-high leading-relaxed mb-space-2xl">
             From multi-car corporate fleet leases to high-profile wedding convoys and VIP protocol escorts, our dedicated concierge team is available 24 hours a day to orchestrate your trip.
@@ -34,11 +34,11 @@ export const CallToAction: React.FC = () => {
             </a>
             <WhatsAppButton 
               phoneNumber="923174248579"
-              message="Hello Apex Drive Concierge, I would like to request a custom fleet quote"
+              message="Hello Rizwan Cars Concierge, I would like to request a custom fleet quote"
               className="px-space-xl py-space-md rounded-full bg-[#25D366] hover:bg-[#22C35E] text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-[0_8px_24px_rgba(37,211,102,0.35)] transition-all transform hover:scale-105"
             >
               <span className="material-symbols-outlined text-[20px]">chat</span>
-              <span>Instant WhatsApp Inquiry</span>
+              <span>Book Now</span>
             </WhatsAppButton>
           </div>
         </div>

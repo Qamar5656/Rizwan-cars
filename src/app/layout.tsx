@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -17,12 +17,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Apex Drive | Premium Car Rental",
+export const metadata = {
+  title: "Rizwan Cars | Premium Car Rental",
   description: "Premium and reliable car rentals for every journey. Verified models, transparent tariffs, and 24/7 priority roadside dispatch.",
-  keywords: "car rental, premium cars, rent a car, Apex Drive, chauffeur, self drive",
+  keywords: "car rental, premium cars, rent a car, Rizwan Cars, driver, self drive",
   openGraph: {
-    title: "Apex Drive | Premium Car Rental",
+    title: "Rizwan Cars | Premium Car Rental",
     description: "From economical city drives to luxury adventures. 100% Guaranteed Model Dispatch.",
     type: "website",
   }
@@ -58,7 +58,7 @@ export default function RootLayout({
         <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
           <WhatsAppButton
             phoneNumber="923174248579"
-            message="Hello Apex Drive, I want to rent a car"
+            message="Hello Rizwan Cars, I want to rent a car"
             className="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#22C35E] text-on-secondary flex items-center justify-center shadow-[0_10px_25px_rgba(37,211,102,0.4)] transition-all transform hover:scale-110 active:scale-95"
           >
             <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-error border-2 border-surface-container-lowest"></span>
